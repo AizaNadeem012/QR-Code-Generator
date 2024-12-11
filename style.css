@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(21, 53, 53);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.content{
+    height: 60vh;
+    width: 30vw;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-content{
+    height: 50vh;
+    width: 20vw;
+    background-color: #fff;
+   margin-top: 30px;
+}
+.inner-content p{
+    font-size: 23px;
+    font-weight: 500;
+
+}
+.input{
+    margin-top: 30px;
+   /* border-radius: 5%; */
+   padding-left: 20px;
+    height: 6vh;
+    width: 20vw;
+    font-size: 18px;
+    /* color: #fff; */
+}
+
+.inner-content button{
+    margin-top: 30px;
+    height: 7vh;
+    width: 20vw;
+    font-size: 17px;
+    background-color: rgb(41, 80, 80);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#box{
+    width: 130px;
+    border-radius: 5px;
+    max-height: 0;
+    transition: max-height 1s;
+    overflow: hidden;
+}
+
+#box img{
+    width: 100%;
+    padding: 10px;
+
+}
+
+#box.show-img{
+    max-height: 200px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
